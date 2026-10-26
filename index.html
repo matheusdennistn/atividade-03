@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- METADADOS: descrição exibida por buscadores. Exemplos: "Adestramento positivo para cães" ou "Aprenda a educar seu pet". -->
+    <meta name="description" content="___">
+    <!-- TÍTULO DA ABA: nome do site e assunto. Exemplos: "EducaCão | Adestramento" ou "Amigo Pet | Escola Canina". -->
+    <title>Centro de educação de cães EducaCão</title>
+    <!-- NÃO ALTERAR: este caminho conecta o HTML ao CSS da atividade. -->
+    <!-- Fonte do PDF: caso não haja internet, as fontes alternativas do CSS funcionam. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Primeiro, base neutra; depois, as respostas do aluno. NÃO INVERTER! -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- =================== 1. CABEÇALHO E MENU =================== -->
+    <!-- Identidade da marca e menu que leva às seções. Compare com o topo da imagem do PDF. -->
+    <header class="site-header">
+        <!-- LOGOTIPO: nome da empresa. Exemplos: "EducaCão" ou "Cão Feliz". -->
+        <a class="logo" href="#inicio" aria-label="Página inicial">
+            <span class="logo-mark" aria-hidden="true">🐾</span>
+            <span class="logo-copy">
+                <!-- NOME EM DUAS CORES: divida a marca nos dois elementos. Ex.: "Educa" + "Cão" ou "Amigo" + "Pet". -->
+                <strong>EducaCão<span></span>™</strong>
+                <!-- TEXTO PEQUENO DO LOGO: tipo de negócio. Ex.: "Adestramento de Cães" ou "Educação Canina". -->
+                <small>Adestramento de cães</small>
+            </span>
+        </a>
+        <!-- MENU: escreva o nome de cada seção. Não altere os href, pois levam aos IDs correspondentes. -->
+        <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+                <!-- LINK DO INÍCIO. Exemplos: "Início" ou "Página inicial". -->
+                <li><a class="active" href="#inicio">Inicio</a></li>
+                <!-- LINK DA HISTÓRIA. Exemplos: "Sobre" ou "Quem somos". -->
+                <li><a href="#sobre">Sobre</a></li>
+                <!-- LINK DOS SERVIÇOS. Exemplos: "Serviços" ou "Treinamentos". -->
+                <li><a href="#servicos">Seviços</a></li>
+                <!-- LINK DOS DIFERENCIAIS. Exemplos: "Diferenciais" ou "Vantagens". -->
+                <li><a href="#diferenciais">Diferenciais</a></li>
+                <!-- LINK DOS DEPOIMENTOS. Exemplos: "Depoimentos" ou "Avaliações". -->
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <!-- LINK DO CONTATO. Exemplos: "Contato" ou "Fale conosco". -->
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <!-- BOTÃO DO TOPO: chamada para ação. Exemplos: "Agende uma consulta" ou "Fale com um adestrador". -->
+        <a class="button button-small" href="#contato">Nos contate agora</a>
+    </header>
+
+    <main>
+        <!-- =================== 2. ABERTURA / BANNER PRINCIPAL =================== -->
+        <!-- HERO: destaque inicial, contendo selo, título grande, descrição, botão e foto principal. -->
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <!-- SELO PEQUENO: tema da atividade. Ex.: "Educação canina" ou "Treinamento positivo". -->
+                <p class="eyebrow">Educação canina</p>
+                <!-- FRASE PRINCIPAL: uma parte normal e outra colorida dentro de span. -->
+                <!-- Ex. 1: "Mais que adestramento: uma relação melhor entre" + "você e seu cão." -->
+                <!-- Ex. 2: "Educação com carinho para" + "seu melhor amigo." -->
+                <h1>Mais do que adestramento: uma relação melhor entre  <span>você e seu cão</span></h1>
+                <!-- DESCRIÇÃO DA MARCA: explique o benefício em uma frase. -->
+                <!-- Ex.: "Treinamento positivo e personalizado para uma convivência mais feliz, equilibrada e segura." -->
+                <!-- Ou: "Ajude seu cachorro a aprender com respeito e confiança." -->
+                <p class="hero-description">Treinamento positivo e personalizado para uma convivência mais feliz, equilibrada e segura</p>
+                <!-- BOTÃO PRINCIPAL: convide o visitante a entrar em contato. Ex.: "Agende uma consulta" ou "Comece agora". -->
+                <a class="button button-primary" href="#contato">Agende uma consulta<span aria-hidden="true">→</span></a>
+            </div>
+            <div class="hero-image">
+                <!-- IMAGEM PRINCIPAL: mantenha src. Preencha alt com descrição objetiva. Exemplos: "Golden retriever no parque" ou "Cão sorrindo na grama". -->
+                <img src="img/golden.avif" alt="___">
+            </div>
+            <!-- ELEMENTO DECORATIVO: este emoji não é um texto de conteúdo. -->
+            <span class="hero-decoration" aria-hidden="true">Este é o cão de um de nossos clientes🐾</span>
+        </section>
+
+        <!-- =================== 3. SERVIÇOS =================== -->
+        <!-- Apresente três tipos de treinamento em cartões com imagem, título, resumo e link. -->
+        <section class="services section" id="servicos">
+            <div class="section-heading">
+                <!-- SELO DOS SERVIÇOS. Ex.: "Aprendizado para cada fase" ou "Soluções para seu cão". -->
+                <p class="eyebrow">Aprendizado para cada fase</p>
+                <!-- TÍTULO DA SEÇÃO. Ex.: "Nossos serviços" ou "Como podemos ajudar?". -->
+                <h2>Nossos Serviços</h2>
+                <!-- FRASE INTRODUTÓRIA. Ex.: "Treinamento para todas as fases da vida do seu cão." ou "Escolha o treinamento ideal." -->
+                <p>Aprendizado para todas as fases da vida do seu cão</p>
+            </div>
+            <div class="service-grid">
+                <!-- CARTÃO 1: serviço para ensinar comandos. -->
+                <article class="service-card">
+                    <!-- DESCRIÇÃO DA FOTO. Ex.: "Adestrador ensinando comandos" ou "Pessoa treinando cachorro". -->
+                    <img src="img/adestrador1.avif" alt="___">
+                    <div class="card-content">
+                        <!-- NOME DO SERVIÇO. Ex.: "Adestramento Básico" ou "Primeiros Comandos". -->
+                        <h3>Adestramento básico</h3>
+                        <!-- BENEFÍCIO DO SERVIÇO. Ex.: "Comandos essenciais para uma convivência tranquila." ou "Aprenda sentar e ficar." -->
+                        <p>Comandos essenciais para uma convivência tranquila.</p>
+                        <!-- LINK DO CARTÃO. Ex.: "Saiba mais" ou "Conheça o serviço". -->
+                        <a href="#contato" class="text-link">Saiba mais<span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <!-- CARTÃO 2: serviço para trabalhar obediência e comportamento. -->
+                <article class="service-card">
+                    <!-- DESCRIÇÃO DA FOTO. Ex.: "Cão atento ao adestrador" ou "Cão em treinamento". -->
+                    <img src="img/adestrador2.avif" alt="___">
+                    <div class="card-content">
+                        <!-- NOME DO SERVIÇO. Ex.: "Obediência e Comportamento" ou "Boas Maneiras". -->
+                        <h3>Obediência e comportamento</h3>
+                        <!-- BENEFÍCIO. Ex.: "Desenvolva hábitos saudáveis e fortaleça a relação com seu cão." ou "Melhore a convivência em casa." -->
+                        <p>Desenvolva hábitos saudáveis e fortaleça a relação com seu cão.</p>
+                        <!-- LINK. Ex.: "Saiba mais" ou "Quero conhecer". -->
+                        <a href="#contato" class="text-link">Saiba mais<span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+
+                <!-- CARTÃO 3: serviço voltado a filhotes. -->
+                <article class="service-card">
+                    <!-- DESCRIÇÃO DA FOTO. Ex.: "Filhote sentado na grama" ou "Filhote olhando para a câmera". -->
+                    <img src="img/adestrador 3.avif" alt="___">
+                    <div class="card-content">
+                        <!-- NOME DO SERVIÇO. Ex.: "Educação de Filhotes" ou "Primeiros Passos". -->
+                        <h3>Educação de Filhotes</h3>
+                        <!-- BENEFÍCIO. Ex.: "Comece desde cedo a construir uma rotina positiva e equilibrada." ou "Ensine bons hábitos logo no início." -->
+                        <p>Comece desde cedo a construir uma rotina positiva e equilibrada.</p>
+                        <!-- LINK. Ex.: "Saiba mais" ou "Ver detalhes". -->
+                        <a href="#contato" class="text-link">Saiba mais<span aria-hidden="true">→</span></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- =================== 4. SOBRE A EMPRESA =================== -->
+        <!-- Apresente a história, valores e maneira de trabalhar; imagem à esquerda e texto à direita. -->
+        <section class="about section" id="sobre">
+            <div class="about-image">
+                <!-- DESCRIÇÃO DA FOTO. Ex.: "Treinador com cachorro" ou "Adestramento positivo em prática". -->
+                <img src="img/sobre.jpg" alt="___">
+            </div>
+            <div class="about-content">
+                <!-- SELO DA HISTÓRIA. Ex.: "Nossa história" ou "Quem somos". -->
+                <p class="eyebrow">___</p>
+                <!-- TÍTULO SOBRE A EMPRESA. Ex.: "Educação com respeito e carinho" ou "Cuidado que ensina". -->
+                <h2>___</h2>
+                <!-- PARÁGRAFO INSTITUCIONAL: conte o objetivo da empresa em duas ou três frases. -->
+                <!-- Ex.: "Acreditamos que o aprendizado acontece com paciência, consistência e respeito ao animal." -->
+                <!-- Ou: "Ensinamos tutores e cães a criarem uma relação de confiança." -->
+                <p>___</p>
+                <ul class="about-list">
+                    <!-- VALOR 1. Ex.: "Métodos positivos de aprendizagem" ou "Treino sem violência". -->
+                    <li>✓ ___</li>
+                    <!-- VALOR 2. Ex.: "Orientação personalizada" ou "Atenção individual". -->
+                    <li>✓ ___</li>
+                    <!-- VALOR 3. Ex.: "Respeito ao ritmo de cada animal" ou "Paciência em cada etapa". -->
+                    <li>✓ ___</li>
+                </ul>
+                <!-- BOTÃO DA SEÇÃO SOBRE. Ex.: "Fale com nossa equipe" ou "Tire suas dúvidas". -->
+                <a class="button button-secondary" href="#contato">___</a>
+            </div>
+        </section>
+
+        <!-- =================== 5. DIFERENCIAIS =================== -->
+        <!-- Explique por que um visitante deveria escolher esta empresa. Há três cartões de benefícios. -->
+        <section class="benefits section" id="diferenciais">
+            <div class="section-heading">
+                <!-- SELO. Ex.: "Nosso compromisso" ou "Nossa essência". -->
+                <p class="eyebrow">___</p>
+                <!-- TÍTULO. Ex.: "Por que escolher a EducaCão?" ou "O que nos diferencia?". -->
+                <h2>___</h2>
+                <!-- DESCRIÇÃO. Ex.: "Mais confiança para você e bem-estar para seu cão." ou "Aprendizado respeitoso para toda a família." -->
+                <p>___</p>
+            </div>
+            <div class="benefit-grid">
+                <!-- DIFERENCIAL 1: método de aprendizado; mantenha o ícone decorativo. -->
+                <article class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">♥</span>
+                    <div>
+                        <!-- TÍTULO. Ex.: "Métodos positivos" ou "Ensino com respeito". -->
+                        <h3>___</h3>
+                        <!-- FRASE. Ex.: "Aprendizagem baseada em respeito e incentivo." ou "Recompensas e estímulos positivos." -->
+                        <p>___</p>
+                    </div>
+                </article>
+                <!-- DIFERENCIAL 2: atendimento específico para cada família. -->
+                <article class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">●</span>
+                    <div>
+                        <!-- TÍTULO. Ex.: "Atendimento personalizado" ou "Plano individual". -->
+                        <h3>___</h3>
+                        <!-- FRASE. Ex.: "Orientação para as necessidades de cada família." ou "Aulas adaptadas para cada cão." -->
+                        <p>___</p>
+                    </div>
+                </article>
+                <!-- DIFERENCIAL 3: cuidado e experiência. -->
+                <article class="benefit-card">
+                    <span class="benefit-icon" aria-hidden="true">★</span>
+                    <div>
+                        <!-- TÍTULO. Ex.: "Experiência e cuidado" ou "Acompanhamento especial". -->
+                        <h3>___</h3>
+                        <!-- FRASE. Ex.: "Respeito ao ritmo de cada animal." ou "Apoio em cada etapa do aprendizado." -->
+                        <p>___</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- =================== 6. DEPOIMENTOS =================== -->
+        <!-- Três relatos SIMULADOS para praticar os cartões. Não apresentar como avaliações reais. -->
+        <section class="testimonials section" id="depoimentos">
+            <div class="section-heading">
+                <!-- SELO. Ex.: "Histórias de tutores" ou "Experiências compartilhadas". -->
+                <p class="eyebrow">___</p>
+                <!-- TÍTULO. Ex.: "O que nossos clientes dizem" ou "Depoimentos". -->
+                <h2>___</h2>
+                <!-- AVISO DE EXEMPLOS. Ex.: "Relatos fictícios para esta atividade." ou "Exemplos criados para estudo." -->
+                <p>___</p>
+            </div>
+            <div class="testimonial-grid">
+                <!-- DEPOIMENTO FICTÍCIO 1 -->
+                <article class="testimonial-card">
+                    <!-- INICIAIS do nome fictício. Ex.: "CS" ou "AP". -->
+                    <div class="testimonial-avatar" aria-hidden="true">___</div>
+                    <div>
+                        <!-- RELATO. Ex.: "Aprendemos juntos a ter uma rotina melhor." ou "Foi divertido aprender novos comandos." -->
+                        <blockquote>___</blockquote>
+                        <!-- NOME FICTÍCIO. Ex.: "Carla Souza" ou "Ana Pereira". -->
+                        <p class="testimonial-author">___</p>
+                        <!-- IDENTIFICAÇÃO. Ex.: "Tutora da Luna" ou "Tutora do Bob". -->
+                        <p class="testimonial-pet">___</p>
+                    </div>
+                </article>
+                <!-- DEPOIMENTO FICTÍCIO 2 -->
+                <article class="testimonial-card">
+                    <!-- INICIAIS. Ex.: "RL" ou "JP". -->
+                    <div class="testimonial-avatar" aria-hidden="true">___</div>
+                    <div>
+                        <!-- RELATO. Ex.: "A orientação ajudou muito na convivência com nosso cão." ou "Aprendemos a entender melhor nosso pet." -->
+                        <blockquote>___</blockquote>
+                        <!-- NOME FICTÍCIO. Ex.: "Rafael Lima" ou "João Pereira". -->
+                        <p class="testimonial-author">___</p>
+                        <!-- IDENTIFICAÇÃO. Ex.: "Tutor do Thor" ou "Tutor do Rex". -->
+                        <p class="testimonial-pet">___</p>
+                    </div>
+                </article>
+                <!-- DEPOIMENTO FICTÍCIO 3 -->
+                <article class="testimonial-card">
+                    <!-- INICIAIS. Ex.: "JA" ou "MC". -->
+                    <div class="testimonial-avatar" aria-hidden="true">___</div>
+                    <div>
+                        <!-- RELATO. Ex.: "Uma experiência positiva e acolhedora." ou "O atendimento foi muito atencioso." -->
+                        <blockquote>___</blockquote>
+                        <!-- NOME FICTÍCIO. Ex.: "Juliana Alves" ou "Mariana Costa". -->
+                        <p class="testimonial-author">___</p>
+                        <!-- IDENTIFICAÇÃO. Ex.: "Tutora do Max" ou "Tutora da Mel". -->
+                        <p class="testimonial-pet">___</p>
+                    </div>
+                </article>
+            </div>
+            <!-- AVISO LEGAL: os depoimentos são inventados. Ex.: "Depoimentos fictícios para atividade escolar." ou "Relatos ilustrativos, sem clientes reais." -->
+            <p class="fictional-note">___</p>
+        </section>
+
+        <!-- =================== 7. CONTATO E FORMULÁRIO =================== -->
+        <!-- Informações do negócio e formulário demonstrativo. O envio não será funcional sem back-end. -->
+        <section class="contact section" id="contato">
+            <div class="contact-content">
+                <!-- SELO. Ex.: "Vamos conversar?" ou "Estamos aqui para ajudar". -->
+                <p class="eyebrow">___</p>
+                <!-- TÍTULO. Ex.: "Entre em contato" ou "Fale com a equipe". -->
+                <h2>___</h2>
+                <!-- INTRODUÇÃO. Ex.: "Conte um pouco sobre você e seu cão." ou "Envie uma mensagem para conhecer nossos serviços." -->
+                <p>___</p>
+                <ul class="contact-details">
+                    <!-- TELEFONE FICTÍCIO. Ex.: "(00) 0000-0000" ou "(48) 00000-0000". -->
+                    <li><span aria-hidden="true">☎</span> ___</li>
+                    <!-- EMAIL FICTÍCIO. Ex.: "contato@educacao.com.br" ou "ola@caofeliz.com.br". -->
+                    <li><span aria-hidden="true">✉</span> ___</li>
+                    <!-- ENDEREÇO FICTÍCIO. Ex.: "Rua Exemplo, 123 - Sua Cidade/UF" ou "Av. Central, 50 - Cidade/UF". -->
+                    <li><span aria-hidden="true">⌖</span> ___</li>
+                </ul>
+            </div>
+            <!-- FORMULÁRIO: preserve os atributos name, type e id para futuras aulas de JavaScript e banco de dados. -->
+            <form class="contact-form" action="#" method="post">
+                <div class="form-group">
+                    <!-- RÓTULO DO NOME. Ex.: "Seu nome" ou "Nome completo". -->
+                    <label for="nome">___</label>
+                    <!-- DICA DENTRO DO CAMPO. Ex.: "Digite seu nome" ou "Como você se chama?". -->
+                    <input type="text" id="nome" name="nome" placeholder="___" autocomplete="name">
+                </div>
+                <div class="form-group">
+                    <!-- RÓTULO DO EMAIL. Ex.: "Seu e-mail" ou "E-mail para contato". -->
+                    <label for="email">___</label>
+                    <!-- DICA DO CAMPO. Ex.: "seu@email.com" ou "Digite seu e-mail". -->
+                    <input type="email" id="email" name="email" placeholder="___" autocomplete="email">
+                </div>
+                <div class="form-group form-group-full">
+                    <!-- RÓTULO DO SELECT. Ex.: "Serviço desejado" ou "Qual treinamento procura?". -->
+                    <label for="servico">___</label>
+                    <select id="servico" name="servico">
+                        <!-- PRIMEIRA OPÇÃO: orientação inicial. Ex.: "Selecione uma opção" ou "Escolha um serviço". -->
+                        <option value="">___</option>
+                        <!-- OPÇÃO 1: serviços. Ex.: "Adestramento Básico" ou "Primeiros Comandos". -->
+                        <option value="basico">___</option>
+                        <!-- OPÇÃO 2: serviços. Ex.: "Obediência e Comportamento" ou "Boas Maneiras". -->
+                        <option value="comportamento">___</option>
+                        <!-- OPÇÃO 3: serviços. Ex.: "Educação de Filhotes" ou "Primeiros Passos". -->
+                        <option value="filhotes">___</option>
+                    </select>
+                </div>
+                <div class="form-group form-group-full">
+                    <!-- RÓTULO DA MENSAGEM. Ex.: "Mensagem" ou "Conte sua dúvida". -->
+                    <label for="mensagem">___</label>
+                    <!-- DICA NA ÁREA DE TEXTO. Ex.: "Escreva sua mensagem" ou "Conte o que precisa". -->
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="___"></textarea>
+                </div>
+                <!-- BOTÃO DE ENVIO. Ex.: "Enviar mensagem" ou "Solicitar contato". -->
+                <button class="button button-primary form-submit" type="submit">___</button>
+                <!-- AVISO SOBRE O FORMULÁRIO: ainda não está conectado ao servidor. -->
+                <!-- Ex.: "Formulário demonstrativo: não envia dados sem integração." ou "Envio disponível após integração do back-end." -->
+                <p class="form-note form-group-full">___</p>
+            </form>
+        </section>
+    </main>
+
+    <!-- =================== 8. RODAPÉ =================== -->
+    <!-- Último bloco: marca, slogan, aviso de direitos e ícones de redes sociais. -->
+    <footer class="site-footer">
+        <a class="logo footer-logo" href="#inicio">
+            <span class="logo-mark" aria-hidden="true">🐾</span>
+            <span class="logo-copy">
+                <!-- REPITA O NOME DA MARCA (duas partes). Ex.: "Educa" + "Cão" ou "Amigo" + "Pet". -->
+                <strong>___<span>___</span></strong>
+                <!-- REPITA O TIPO DO NEGÓCIO. Ex.: "Adestramento de Cães" ou "Educação Canina". -->
+                <small>___</small>
+            </span>
+        </a>
+        <!-- SLOGAN DO RODAPÉ. Ex.: "Educação, respeito e bem-estar animal." ou "Cães felizes, famílias felizes." -->
+        <p>___</p>
+        <!-- AVISO DE RODAPÉ: indique o ano, a marca e o caráter fictício do projeto. -->
+        <!-- Ex.: "© 2026 EducaCão. Projeto fictício para fins educacionais." -->
+        <p class="footer-copy">___</p>
+        <div class="social-links" aria-label="Redes sociais demonstrativas">
+            <!-- ÍCONES DECORATIVOS: mantidos como no projeto original. Os href são demonstrativos. -->
+            <a href="#contato" aria-label="Instagram">◎</a>
+            <a href="#contato" aria-label="Facebook">f</a>
+            <a href="#contato" aria-label="YouTube">▶</a>
+        </div>
+    </footer>
+</body>
+</html>
