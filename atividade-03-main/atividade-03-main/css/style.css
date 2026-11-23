@@ -28,98 +28,98 @@
        B) #2e8b50
        C) #2574a9
     */
-    --green: ;
+    --green: #2e8b50;
     /* --green-dark: guarda o verde escuro dos títulos.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #145c36
        B) #2574a9
        C) #c2410c
     */
-    --green-dark: ;
+    --green-dark: #145c36 ;
     /* --green-deep: guarda o verde profundo do rodapé.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #2574a9
        B) #104a2d
        C) #c2410c
     */
-    --green-deep: ;
+    --green-deep: #104a2d ;
     /* --green-soft: guarda o verde claro dos fundos.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #2574a9
        B) #c2410c
        C) #eef5e9
     */
-    --green-soft: ;
+    --green-soft: #eef5e9 ;
     /* --orange: guarda o laranja de destaque.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #c2410c
        B) #ff9800
        C) #2574a9
     */
-    --orange: ;
+    --orange: #ff9800 ;
     /* --orange-dark: guarda o laranja do botão ao passar o mouse.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #e88500
        B) #c2410c
        C) #2574a9
     */
-    --orange-dark: ;
+    --orange-dark: #e88500 ;
     /* --cream: guarda o creme das seções.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #2574a9
        B) #fff8e7
        C) #c2410c
     */
-    --cream: ;
+    --cream: #fff8e7 ;
     /* --white: guarda o branco dos cartões.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #c2410c
        B) #ffffff
        C) #2574a9
     */
-    --white: ;
+    --white: #ffffff ;
     /* --text: define a cor de texto principal.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #c2410c
        B) #2574a9
        C) #293b32
     */
-    --text: ;
+    --text: #293b32 ;
     /* --muted: define o cinza-esverdeado de texto secundário.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #64736a
        B) #c2410c
        C) #2574a9
     */
-    --muted: ;
+    --muted: #64736a ;
     /* --border: define o tom suave das bordas.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #c2410c
        B) #2574a9
        C) #e8e6dc
     */
-    --border: ;
+    --border: #e8e6dc ;
     /* --shadow: guarda a sombra dos cartões.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0 4px 12px rgba(0, 0, 0, 0.25)
        B) none
        C) 0 8px 24px rgba(26, 67, 42, 0.08)
     */
-    --shadow: ;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.25) ;
     /* --radius: guarda o raio-padrão de cantos arredondados.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0px
        B) 8px
        C) 16px
     */
-    --radius: ;
+    --radius: 16px;
     /* --content-width: guarda a largura máxima das seções.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 800px
        B) 1160px
        C) 900px
     */
-    --content-width: ;
+    --content-width: 900px ;
 }
 
     /* ============ CONFIGURAÇÕES GERAIS ============ */
@@ -130,7 +130,7 @@
        B) inherit
        C) border-box
     */
-    box-sizing: ;
+    box-sizing: border-box ;
 }
 
     /* ============ ROLAGEM DA PÁGINA ============ */
@@ -141,14 +141,14 @@ html {
        B) smooth
        C) auto
     */
-    scroll-behavior: ;
+    scroll-behavior: smooth ;
     /* scroll-padding-top: reserva espaço para o cabeçalho ao navegar por âncoras.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 90px
        B) 0
        C) 10px
     */
-    scroll-padding-top: ;
+    scroll-padding-top: 90px ;
 }
 
     /* ============ CORPO DA PÁGINA ============ */
@@ -159,21 +159,21 @@ body {
        B) 0
        C) 18px
     */
-    margin: ;
+    margin: 18px ;
     /* font-family: define a família de letras usada nos textos.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) Arial, sans-serif
        B) "Times New Roman", serif
        C) "Poppins", "Segoe UI", Arial, sans-serif
     */
-    font-family: ;
+    font-family: Arial, sans-serif ;
     /* color: define a cor da letra ou símbolo.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) var(--orange)
        B) transparent
        C) var(--text)
     */
-    color: ;
+    color: var(--text) ;
     /* background: define cor ou gradiente do fundo.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) transparent
@@ -187,7 +187,7 @@ body {
        B) 1.6
        C) 1
     */
-    line-height: ;
+    line-height: 1.6 ;
 }
 
     /* ============ IMAGENS ============ */

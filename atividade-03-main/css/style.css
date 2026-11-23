@@ -28,7 +28,7 @@
        B) #2e8b50
        C) #2574a9
     */
-    --green: #2e8b50;
+    --green: #2e8b50 ;
     /* --green-dark: guarda o verde escuro dos títulos.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #145c36
@@ -84,7 +84,7 @@
        B) #2574a9
        C) #293b32
     */
-    --text: #293b32 ;
+    --text: #2a5841 ;
     /* --muted: define o cinza-esverdeado de texto secundário.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) #64736a
@@ -105,21 +105,21 @@
        B) none
        C) 0 8px 24px rgba(26, 67, 42, 0.08)
     */
-    --shadow: 0 4px 12px rgba(0, 0, 0, 0.25) ;
+    --shadow: 0 4px 12px rgba(26, 67, 42, 0.08) ;
     /* --radius: guarda o raio-padrão de cantos arredondados.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0px
        B) 8px
        C) 16px
     */
-    --radius: 16px;
+    --radius: 16px ;
     /* --content-width: guarda a largura máxima das seções.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 800px
        B) 1160px
        C) 900px
     */
-    --content-width: 900px ;
+    --content-width: 1160px ;
 }
 
     /* ============ CONFIGURAÇÕES GERAIS ============ */
@@ -130,7 +130,7 @@
        B) inherit
        C) border-box
     */
-    box-sizing: border-box ;
+    box-sizing: content-box;
 }
 
     /* ============ ROLAGEM DA PÁGINA ============ */
@@ -180,7 +180,7 @@ body {
        B) var(--orange)
        C) var(--white)
     */
-    background: ;
+    background: var(--white) ;
     /* line-height: regula a altura de cada linha de texto.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 1.2
@@ -198,35 +198,35 @@ img {
        B) flex
        C) grid
     */
-    display: ;
+    display: grid ;
     /* width: define a largura do elemento.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 10px
        B) 50%
        C) 100%
     */
-    width: ;
+    width: 100% ;
     /* max-width: limita a largura máxima.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0
        B) 10px
        C) 100%
     */
-    max-width: ;
+    max-width: 100% ;
     /* height: define a altura.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0
        B) auto
        C) 10px
     */
-    height: ;
+    height: auto ;
     /* object-fit: controla como uma imagem é encaixada na área disponível.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) contain
        B) fill
        C) cover
     */
-    object-fit: ;
+    object-fit: cover ;
 }
 
     /* ============ LINKS ============ */
@@ -237,14 +237,14 @@ a {
        B) transparent
        C) inherit
     */
-    color: ;
+    color: var(--orange) ;
     /* text-decoration: define sublinhado ou outros efeitos nos links.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) none
        B) underline
        C) line-through
     */
-    text-decoration: ;
+    text-decoration: underline ;
 }
 
     /* ============ LISTAS ============ */
@@ -255,21 +255,21 @@ ul {
        B) decimal
        C) none
     */
-    list-style: ;
+    list-style: disc ;
     /* margin: controla o espaço externo do elemento.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 0
        B) 18px
        C) 10px
     */
-    margin: ;
+    margin: 10px ;
     /* padding: cria espaço interno.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 10px
        B) 18px
        C) 0
     */
-    padding: ;
+    padding: 10px ;
 }
 
     /* ============ CABEÇALHO ============ */
@@ -280,70 +280,70 @@ ul {
        B) relative
        C) sticky
     */
-    position: ;
+    position: relative ;
     /* top: regula a distância até o topo.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 10px
        B) 18px
        C) 0
     */
-    top: ;
+    top: 10px ;
     /* z-index: indica qual elemento aparece na frente dos outros.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 10
        B) 0
        C) 1
     */
-    z-index: ;
+    z-index: 0 ;
     /* display: escolhe como os elementos são organizados.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) grid
        B) flex
        C) block
     */
-    display: ;
+    display: block ;
     /* align-items: alinha itens no eixo transversal de Flexbox ou Grid.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) center
        B) stretch
        C) start
     */
-    align-items: ;
+    align-items: center ;
     /* justify-content: distribui o conteúdo pelo eixo principal.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) space-between
        B) space-around
        C) center
     */
-    justify-content: ;
+    justify-content: center ;
     /* gap: espaço entre os itens de Flexbox ou Grid.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 10px
        B) 24px
        C) 0
     */
-    gap: ;
+    gap: 24px ;
     /* padding: cria espaço interno.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) 12px max(5vw, calc((100vw - var(--content-width)) / 2))
        B) 0
        C) 10px
     */
-    padding: ;
+    padding: 12px max(5vw, calc((100vw - var(--content-width)) / 2)) ;
     /* background: define cor ou gradiente do fundo.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) transparent
        B) var(--green)
        C) rgba(255, 255, 255, 0.97)
     */
-    background: ;
+    background: var(--green) ;
     /* border-bottom: define a borda inferior.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) none
        B) 1px solid rgba(20, 92, 54, 0.08)
        C) 1px solid #999
     */
-    border-bottom: ;
+    border-bottom: 1px solid #999 ;
 }
 
     /* ============ LOGOTIPO ============ */
@@ -354,7 +354,7 @@ ul {
        B) flex
        C) block
     */
-    display: ;
+    display: flex ;
     /* align-items: alinha itens no eixo transversal de Flexbox ou Grid.
        Compare com o modelo.pdf. Qual valor reproduz o resultado?
        A) center

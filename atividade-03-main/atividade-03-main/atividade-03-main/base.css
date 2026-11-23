@@ -1,0 +1,211 @@
+/* Fallback de variáveis tipadas: valores provisórios CINZA, sem entregar as cores.
+   Chrome, Edge e Firefox atuais ativam o valor correto ao preencher :root. */
+@property --green { syntax: "<color>"; inherits: true; initial-value: #a0a9a3; }
+@property --green-dark { syntax: "<color>"; inherits: true; initial-value: #555d57; }
+@property --green-deep { syntax: "<color>"; inherits: true; initial-value: #626b66; }
+@property --green-soft { syntax: "<color>"; inherits: true; initial-value: #e5e8e5; }
+@property --orange { syntax: "<color>"; inherits: true; initial-value: #a5aaa7; }
+@property --orange-dark { syntax: "<color>"; inherits: true; initial-value: #878e89; }
+@property --cream { syntax: "<color>"; inherits: true; initial-value: #ebebeb; }
+@property --white { syntax: "<color>"; inherits: true; initial-value: #f3f3f3; }
+@property --text { syntax: "<color>"; inherits: true; initial-value: #333333; }
+@property --muted { syntax: "<color>"; inherits: true; initial-value: #555555; }
+@property --border { syntax: "<color>"; inherits: true; initial-value: #cfcfcf; }
+
+/* ==============================================================
+   EDUCACÃO — CSS BASE DE VISUALIZAÇÃO (NÃO É O GABARITO)
+   ==============================================================
+   Este arquivo é carregado ANTES de css/style.css.
+   Não o edite durante a atividade: preencha apenas style.css.
+   Os valores são provisórios e neutros; o CSS da atividade,
+   que vem DEPOIS, substitui cada propriedade preenchida.
+
+   ATENÇÃO: as referências var(--cor) somente passam a valer
+   quando a variável correspondente é preenchida no :root
+   do style.css. Por isso, comece a atividade pela paleta.
+   ==============================================================
+*/
+
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.5;
+}
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+a { color: #333333; text-decoration: none; }
+ul { list-style: none; margin: 0; padding: 0; }
+
+/* Cabeçalho: a distribuição final só aparece ao resolver Flexbox */
+.site-header {
+    display: block;
+    padding: 16px 20px;
+    background: #e6e6e6;
+    border-bottom: 1px solid #cecece;
+}
+.logo { display: inline-flex; align-items: center; gap: 6px; }
+.logo-mark { display: inline-grid; place-items: center; font-size: 24px; }
+.logo-copy { display: flex; flex-direction: column; line-height: 1.2; }
+.logo-copy strong { font-size: 1.1rem; font-weight: 600; }
+.logo-copy small { margin-top: 2px; font-size: 0.75rem; color: var(--muted); }
+.main-nav ul { display: block; gap: 12px; }
+.main-nav a { display: inline-block; padding: 5px 0; color: #333333; }
+
+/* Botões visíveis antes da etapa de personalização */
+.button {
+    display: inline-block;
+    padding: 8px 12px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-align: center;
+    cursor: pointer;
+}
+.button-small, .button-primary, .button-secondary {
+    color: #333333;
+    background: var(--orange);
+}
+
+/* Banner: conteúdo aparece mesmo antes de montar as colunas */
+.hero {
+    position: relative;
+    display: block;
+    min-height: 250px;
+    padding: 28px 20px;
+    background: var(--cream);
+}
+.hero-content { position: relative; max-width: 620px; }
+.eyebrow { margin: 0 0 10px; font-size: 0.8rem; }
+.hero h1 { margin: 8px 0 16px; font-size: 2rem; line-height: 1.2; }
+.hero-description { margin: 0 0 20px; }
+.hero-image { position: relative; min-height: 220px; }
+.hero-image img { position: relative; width: 100%; height: 220px; min-height: 220px; }
+
+/* Seções claras e legíveis */
+.section {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 36px 0;
+}
+.section-heading { margin: 0 auto 24px; text-align: left; }
+.section-heading h2, .about-content h2, .contact-content h2 {
+    margin: 0 0 10px;
+    font-size: 1.6rem;
+    line-height: 1.2;
+}
+.section-heading > p:last-child { color: #555555; }
+
+/* Cartões em UMA coluna, que serão reorganizados pelos alunos */
+.services, .benefits {
+    width: 100%;
+    max-width: none;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.services { background: var(--cream); }
+.service-grid, .benefit-grid, .testimonial-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+}
+.service-card, .testimonial-card {
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+}
+.service-card { overflow: hidden; }
+.service-card > img { height: 175px; object-fit: cover; }
+.card-content { padding: 16px; }
+.card-content h3 { margin: 0 0 8px; font-size: 1.1rem; }
+.card-content p { margin: 0 0 12px; font-size: 0.95rem; }
+.text-link { color: #333333; font-weight: 600; font-size: 0.9rem; }
+
+.about { display: block; gap: 20px; }
+.about-image img { height: 260px; border-radius: 4px; object-position: center; }
+.about-content p:not(.eyebrow) { color: #555555; }
+.about-list { display: grid; gap: 8px; margin: 14px 0 20px; }
+
+.benefits { background: var(--green-soft); }
+.benefit-card { display: flex; align-items: flex-start; gap: 12px; padding: 10px; }
+.benefit-icon {
+    display: grid;
+    flex: 0 0 44px;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: var(--green);
+    font-size: 1.2rem;
+}
+.benefit-card h3 { margin: 0 0 5px; font-size: 1rem; }
+.benefit-card p { margin: 0; color: #555555; font-size: 0.9rem; }
+
+.testimonial-card { display: flex; align-items: flex-start; gap: 12px; padding: 16px; }
+.testimonial-avatar {
+    display: grid;
+    flex: 0 0 44px;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: var(--green);
+    border-radius: 50%;
+}
+.testimonial-card blockquote { margin: 0 0 10px; }
+.testimonial-author { margin: 0; font-weight: 600; }
+
+/* Contato e formulário utilizáveis mesmo antes do CSS Grid final */
+.contact {
+    display: block;
+    padding: 24px;
+    background: var(--cream);
+    border-radius: 4px;
+}
+.contact-details { display: grid; gap: 10px; margin-top: 16px; }
+.contact-details li { display: flex; align-items: center; gap: 10px; }
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+    background: #ffffff;
+    border: 1px solid #cfcfcf;
+    border-radius: 4px;
+}
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group-full, .form-submit { grid-column: 1 / -1; }
+.form-group label { font-size: 0.9rem; font-weight: 600; }
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    min-height: 40px;
+    padding: 9px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    background: #ffffff;
+    color: #333333;
+    font: inherit;
+}
+
+/* Rodapé */
+.site-footer {
+    display: block;
+    padding: 24px 20px;
+    background: var(--green-deep);
+    color: #333333;
+}
+.site-footer > p { margin: 12px 0; font-size: 0.9rem; }
+.social-links { display: flex; gap: 12px; }
+.social-links a { display: grid; place-items: center; width: 30px; height: 30px; }
+
+@media (max-width: 700px) {
+    .section { width: calc(100% - 30px); padding-top: 28px; padding-bottom: 28px; }
+    .hero { padding: 26px 18px; }
+}
